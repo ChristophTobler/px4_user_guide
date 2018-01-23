@@ -31,36 +31,54 @@ More information about the Snapdragon Flight platform is at [Snapdragon-Flight-D
 
 ## Recommended setup
 
-We suggest using the Snapdragon Flight with the following racer frame (250) and our custom hardware mounts. This setup uses a conventional PWM ESC board and therefore needs to be built with the `eagle_default` make target (see our instructions [here](https://dev.px4.io/en/setup/building_px4.html)). If you use the [Qualcomm ESC board](http://shop.intrinsyc.com/products/qualcomm-electronic-speed-control-board), please follow their instructions [here](https://github.com/ATLFlight/ATLFlightDocs/blob/master/PX4.md).
+We suggest using the Snapdragon Flight with a Lumenier frame (4" or 5", see below), the stereo vision Kit and our custom hardware mounts. This setup uses a conventional PWM ESC board and therefore needs to be built with the `eagle_default` make target (see our instructions [here](https://dev.px4.io/en/setup/building_px4.html)).
+
+> **Note** If you use the [Qualcomm ESC board](http://shop.intrinsyc.com/products/qualcomm-electronic-speed-control-board), please follow their instructions [here](https://github.com/ATLFlight/ATLFlightDocs/blob/master/PX4.md).
 
 ![](../../assets/hardware/snapdragon-setup_1.JPG)
 ![](../../assets/hardware/snapdragon-setup_4.JPG)
 
 #### Components
-* [Quantum Falcon 250](http://readme.dronesmith.io/docs/ql25) (includes ESCs and motors)
-* 3DR PIXHAWK MINI GPS
-* Trone range finder
-* Spektrum DXe and FPV Racing Serial Receiver (3.3V Autobind)
+* [Snapdragon Development Kit](https://shop.intrinsyc.com/collections/development-platforms/products/snapdragon-flight-dev-kit)
+* [Snapdragon Flight Stereovision Add-on Kit](https://shop.intrinsyc.com/collections/development-platforms/products/qualcomm-snapdragon-flight-stereovision-add-on-kit)
+* Lumenier QAV-R FPV Racing Quadcopter [4"](https://www.getfpv.com/qav-r-fpv-racing-quadcopter-4.html) or [5"](https://www.getfpv.com/qav-r-fpv-racing-quadcopter-5.html)
+* 4x [Lumenier RX2206-11 2350kV](https://www.getfpv.com/lumenier-rx2206-11-2350kv-motor.html)
+* [Hobbywing Xrotor Micro 40A 4-in-1 ESC](https://www.getfpv.com/hobbywing-xrotor-micro-4-in-1-blheli-s-dshot600-esc.html)
+* [Spektrum DSMX FPV Serial Receiver](https://www.getfpv.com/spektrum-dsmx-quad-race-receiver-with-diversity.html)
+* [Holybro GPS](https://www.getfpv.com/holybro-micro-m8n-gps-module.html)
+* 3D Prints: [Feet](), [Snapdragon mount](), [fan mount]()
+* [GPS antenna mast](https://www.getfpv.com/folding-aluminum-gps-mast-for-dji.html)
+* [4"](https://www.getfpv.com/hqprop-4x4x3ro-cw-propeller-3-blade-2-pack-orange-nylon-glass-fiber.html)/[5"](https://www.getfpv.com/hqprop-5x4-5x3ro-cw-propeller-3-blade-2-pack-orange-nylon-glass-fiber.html) Propeller (clockwise and counter-clockwise)
+* [Battery](https://www.getfpv.com/tattu-1800mah-4s-75c-lipo-battery.html) (we recommend 4S ~1800mAh, XT60 plug)
+* Screws: 10x M3x10, 2x M2x6, 4x M2x10?
+* 4x JST connectors with matching pre-crimped cables
+* 4x washers (3,2 x 7 x 0,5mm)
+* 8x O-Rings (diameter: 3mm, thickess: 2mm)
+* Zip ties
+* Heat sink (14 x 14 x 6 mm) and thermally conductive foil (double sided adhesive)
+* Double sided tape
+* Soldering station
 
-Details on wiring can be found below.
+TODO pictures and some text
 
-In order to mount the Snapdragon Flight, our custom board and camera mounts can be used (the optical flow camera mount is not needed for newer generation boards):
-* [Board mounting plate, for  5mm dampers](https://drive.google.com/open?id=0B2piootk_fIKZ3YyRXQzR1A0ejQ)
-* [Board mounting plate, for  7mm dampers](https://drive.google.com/open?id=0B2piootk_fIKUUYzMEd6WWxmNnM)
-* [Hires camera mount, part 1](https://drive.google.com/open?id=0B2piootk_fIKdTlkX2c5c2IyNGM)
-* [Hires camera mount, part 2](https://drive.google.com/open?id=0B2piootk_fIKbkcxZndrQjFrc0E)
-* [Optical flow camera mount](https://drive.google.com/open?id=0B2piootk_fIKcXJRRW9ZT3hDTlk)
+#### Build instructions
+First, assemble the frame including the mount for the fan. We recommend using the fan and heat sink to avoid CPU throttling.
 
-To assemble the hires camera mount, additional screws (M2x6 or M1.6x6 should fit) have to be used.
+TODO pictures
 
-This particular setup uses vibration dampers with a 7mm mounting diameter which are similar to [these](https://hobbyking.com/en_us/vibration-damping-ball-50gram-8-pcs-bag.html). In addition, the following things are needed:
-* Screws, M3x12
-* O-rings, 3mm inner diameter
-* M3 washers, ~9mm for the inside
-* M3 washers, ~12mm for the outside
+Next, mount the motors to the frame using the M3x10 screws and the 3D printed PX4 feet. After that, place the 4-in-1 ESC board using the plastic spacers that come with the frame.
 
-![](../../assets/hardware/snapdragon-setup_5.JPG)
-![](../../assets/hardware/snapdragon-setup_3.JPG)
+TODO pictures
+
+Now the motors need to be soldered to the ESC board. TODO show arrangement
+
+TODO pictures
+
+Solder the capacitor to the ESC board together with the power cable.
+
+TODO pictures
+
+
 
 
 ## Connectivity
