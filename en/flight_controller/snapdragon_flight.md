@@ -35,8 +35,7 @@ We suggest using the Snapdragon Flight with a Lumenier frame (4" or 5", see belo
 
 > **Note** If you use the [Qualcomm ESC board](http://shop.intrinsyc.com/products/qualcomm-electronic-speed-control-board), please follow their instructions [here](https://github.com/ATLFlight/ATLFlightDocs/blob/master/PX4.md).
 
-![](../../assets/hardware/snapdragon-setup_1.JPG)
-![](../../assets/hardware/snapdragon-setup_4.JPG)
+TODO picure finished build
 
 #### Components
 * [Snapdragon Development Kit](https://shop.intrinsyc.com/collections/development-platforms/products/snapdragon-flight-dev-kit)
@@ -59,27 +58,40 @@ We suggest using the Snapdragon Flight with a Lumenier frame (4" or 5", see belo
 * Double sided tape
 * Soldering station
 
-TODO pictures and some text
+![](../../assets/airframes/multicopter/lumenier_snapdragon/components.jpg)
 
 #### Build instructions
-First, assemble the frame including the mount for the fan. We recommend using the fan and heat sink to avoid CPU throttling.
+First, assemble the frame including the mount for the fan. We recommend using the fan and heat sink to avoid CPU throttling. The fan mount needs to face the back of the frame.
 
-TODO pictures
+<!-- ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_01.jpg) ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_02.jpg) ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_03.jpg) -->
+
+unassambled    |  assambled
+:-------------:|:-----------:
+![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_01.jpg)  |  ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_02.jpg)
 
 Next, mount the motors to the frame using the M3x10 screws and the 3D printed PX4 feet. After that, place the 4-in-1 ESC board using the plastic spacers that come with the frame.
 
-TODO pictures
+unassambled    |  assambled
+:-------------:|:-----------:
+![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_04.jpg)  |  ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_05.jpg)
 
 Now the motors need to be soldered to the ESC board. TODO show arrangement
 
-TODO pictures
+![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_06.jpg)
 
 Solder the capacitor to the ESC board together with the power cable.
 
 TODO pictures
 
+bla bla blade
 
 
+
+Attach the Snapdragon Flight board to the Stereovision Kit using the o-rings for vibration isolation. We recommend applying a heat sink to the CPU to avoid throttling. In addition, to reduce noise on the altitude readings we stick a piece of foam on top of the barometer.
+
+unassambled    |  assambled
+:-------------:|:-----------:
+![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_08.jpg)  |  ![](../../assets/airframes/multicopter/lumenier_snapdragon/snappy_build_09.jpg)
 
 ## Connectivity
 
